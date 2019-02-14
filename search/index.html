@@ -58,24 +58,6 @@
 </section>
     <!-- 欧尼酱功能, 谁用谁知道 -->
     
-    <div class="gal-menu gal-dropdown">
-    <div class="circle" id="gal">
-        <div class="ring">
-            <a href="https://www.rtmacha.com/blog-blogichi" class="menuItem" style="left: 50%; top: 15%;">首页</a>
-            
-            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
-            
-            <a href="/blog-blogichi/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
-            <a href="/blog-blogichi/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
-            <a href="/blog-blogichi/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
-            
-            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
-            
-        </div>
-        <audio id="audio" src="/blog-blogichi/imgs/oni.mp3"></audio>
-    </div>
-</div>
-    
     <header class="navbar navbar-inverse" id="gal-header">
     <div class="container">
         <div class="navbar-header">
@@ -84,17 +66,18 @@
             </button>
             <a href="https://www.rtmacha.com/blog-blogichi">
                 
-                <!-- 这里background使用imgs/${logo_image}(路径文件名) -->
                 <style>
                     #gal-header .navbar-brand {
-                        width: 200px;
-                        height: 50px;
-                        display: block;
-                        background: url('/blog-blogichi/imgs/favicon.ico') no-repeat;
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
                     }
                 </style>
-                    
-                <div class="navbar-brand"></div>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">にゃ~</div>
                 
             </a>
         </div>
@@ -209,7 +192,7 @@
       	var [month, day] = article.date.split('-')
         ''
         ''
-        var defaultPreview = '/blog-blogichi/imgs/preview/preview1.jpg'
+        var defaultPreview = '/blog-blogichi/imgs/preview/preview4.jpg'
         var preview = article.preview ? article.preview : defaultPreview
         var path = '/blog-blogichi/' + article.path
         resultList.append(`<div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
@@ -580,8 +563,6 @@
 </script>
 <script src="/blog-blogichi/js/hs.js"></script>
 <script src="/blog-blogichi/js/blog.js"></script>
-
-<script src="/blog-blogichi/js/oni.js"></script>
 
 
 
