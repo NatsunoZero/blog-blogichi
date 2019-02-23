@@ -31,6 +31,14 @@
         }
     </style>
     
+    <script src="//cdn1.lncld.net/static/js/3.4.2/av-min.js"></script>
+    <script>
+      AV.init({
+        appId: '86UI668rOfhKyF0jGFPWXd12-gzGzoHsz',
+        appKey: 'a0M7WgWJRSbdrGteB1riuLot# your appKeym'
+      })
+    </script>
+    
     <!--<script type="text/javascript">
       if (document.images) {
         var avatar = new Image();
@@ -102,10 +110,21 @@
                 
                 
                 
-                <li class="current">
-                    <a href="/blog-blogichi/categories">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-list"></i>分类
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/blog-blogichi/categories/アニメ/">アニメ</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
                 </li>
                 
                 
@@ -121,13 +140,21 @@
                         
                         
                         <li>
+                            <a href="/blog-blogichi/tags/欢迎/">欢迎</a>
+                        </li>
+                        
+                        <li>
                             <a href="/blog-blogichi/tags/迎え/">迎え</a>
                         </li>
                         
                         <li>
-                            <a href="/blog-blogichi/tags/欢迎/">欢迎</a>
+                            <a href="/blog-blogichi/tags/影评/">影评</a>
                         </li>
                         
+                        
+                        <li>
+                            <a href="/blog-blogichi/tags">...</a>
+                        </li>
                         
                         
                     </ul>
@@ -187,15 +214,6 @@
 </article>
 
 
-<div id="comments-template"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script>
-	if(!window.commentConfig) {
-      window.commentConfig = {}
-      window.commentConfig.title = '分类'
-    }
-</script>
-
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -238,6 +256,18 @@
     
     <!-- 要配置好leancloud才能开启此小工具 -->
     
+    <aside id="sidebar-hot_posts">
+    <div class="panel panel-gal hot hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-fire"></i>
+            最热文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
     
     <aside id="sidebar-recent_posts">
     <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
@@ -248,6 +278,18 @@
             <i class="fa fa-chevron-circle-up panel-toggle"></i>
         </div>
         <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog-blogichi/2019/02/23/new_file/"></a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog-blogichi/2019/02/23/Movie-さよならの朝に約束の花をかざろう/">无论如何都请不要后悔与我相遇——《朝花夕誓》</a>
+                </span>
+            </li>
             
             <li class="list-group-item">
                 <span class="post-title">
@@ -285,7 +327,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/blog-blogichi/2019/02/14/Instruction_jp/">日本語で説明</a>
+                    <a href="/blog-blogichi/2019/02/23/Movie-さよならの朝に約束の花をかざろう/">无论如何都请不要后悔与我相遇——《朝花夕誓》</a>
                 </span>
             </li>
             
@@ -297,7 +339,19 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/blog-blogichi/2019/02/14/Instruction_jp/">日本語で説明</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/blog-blogichi/2019/01/21/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog-blogichi/2019/02/23/new_file/"></a>
                 </span>
             </li>
             
@@ -330,9 +384,17 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/blog-blogichi/tags/迎え/" style="font-size: 15.535436201475939px;" class="tag-cloud-link">迎え</a>
+    <a href="/blog-blogichi/tags/欢迎/" style="font-size: 15.823760854654326px;" class="tag-cloud-link">欢迎</a>
     
-    <a href="/blog-blogichi/tags/欢迎/" style="font-size: 9.504060153599424px;" class="tag-cloud-link">欢迎</a>
+    <a href="/blog-blogichi/tags/迎え/" style="font-size: 12.736562940196661px;" class="tag-cloud-link">迎え</a>
+    
+    <a href="/blog-blogichi/tags/影评/" style="font-size: 11.031174389505601px;" class="tag-cloud-link">影评</a>
+    
+    <a href="/blog-blogichi/tags/转载/" style="font-size: 10.04494357578951px;" class="tag-cloud-link">转载</a>
+    
+    <a href="/blog-blogichi/tags/日本/" style="font-size: 12.157414398958053px;" class="tag-cloud-link">日本</a>
+    
+    <a href="/blog-blogichi/tags/电影/" style="font-size: 10.834055419779546px;" class="tag-cloud-link">电影</a>
     
 </div>
                 
@@ -444,27 +506,11 @@
 <script src="/blog-blogichi/js/blog.js"></script>
 
 
-
-<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
 <script>
-    if(window.commentConfig) {
-      window.commentConfig.id = 'Thu Feb 14 2019 22:16:04 GMT+0800'
-      window.commentConfig.owner = 'NatsunoZero# 必填项, 你的GitHub ID'
-      window.commentConfig.repo = 'comment-repo-blogichi# 必填项  你的存储评论的repo'
-      window.commentConfig.client_id = 'a4c9b5f5b9c4c5cdbd9f'
-      window.commentConfig.client_secret = 'c4b55faabc640835c1c8adea4dbaaed0b1e73ada# 必填项'
-      window.commentConfig.redirect_uri = ''
-    } else {
-      window.commentConfig = {
-      	id: 'Thu Feb 14 2019 22:16:04 GMT+0800',
-        owner: 'NatsunoZero# 必填项, 你的GitHub ID',
-        repo: 'comment-repo-blogichi# 必填项  你的存储评论的repo',
-        client_id: 'a4c9b5f5b9c4c5cdbd9f',
-        client_secret: 'c4b55faabc640835c1c8adea4dbaaed0b1e73ada# 必填项',
-        redirect_uri: ''
-      }
-    }
+    window.hot_posts_count = '10'
+    // window.use_leancloud = 'true'
 </script>
-<script src="/blog-blogichi/js/comment/gitment.js"></script>
+<script src="/blog-blogichi/js/comment/leancloud.js"></script>
+
 
 </html>
