@@ -121,11 +121,11 @@
                         
                         
                         <li>
-                            <a href="/blog-blogichi/tags/欢迎/">欢迎</a>
+                            <a href="/blog-blogichi/tags/迎え/">迎え</a>
                         </li>
                         
                         <li>
-                            <a href="/blog-blogichi/tags/迎え/">迎え</a>
+                            <a href="/blog-blogichi/tags/欢迎/">欢迎</a>
                         </li>
                         
                         
@@ -183,7 +183,7 @@
     // 获取每页的页码数
     var pageSize = '10'
     var useLeancloud = ''
-    var useComment = ('false' === 'true')
+    var useComment = ('true' === 'true')
     $.getJSON('/blog-blogichi/content.json', function (json) {
       $('#search-breadcrumb').append(`搜索'${s}'的结果`)
       var result = getArticles(s, 'posts', json).concat(getArticles(s, 'pages', json))
@@ -449,13 +449,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/blog-blogichi/2019/02/14/Instruction-cn/">说明（简中）</a>
+                    <a href="/blog-blogichi/2019/02/14/Instruction_jp/">日本語で説明</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/blog-blogichi/2019/02/14/Instruction_jp/">日本語で説明</a>
+                    <a href="/blog-blogichi/2019/02/14/Instruction-cn/">说明（简中）</a>
                 </span>
             </li>
             
@@ -494,9 +494,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/blog-blogichi/tags/欢迎/" style="font-size: 18.83446482670476px;" class="tag-cloud-link">欢迎</a>
+    <a href="/blog-blogichi/tags/迎え/" style="font-size: 16.64670418867028px;" class="tag-cloud-link">迎え</a>
     
-    <a href="/blog-blogichi/tags/迎え/" style="font-size: 8.205551924757065px;" class="tag-cloud-link">迎え</a>
+    <a href="/blog-blogichi/tags/欢迎/" style="font-size: 17.333227100726916px;" class="tag-cloud-link">欢迎</a>
     
 </div>
                 
@@ -608,5 +608,27 @@
 <script src="/blog-blogichi/js/blog.js"></script>
 
 
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Mon Jan 21 2019 12:28:29 GMT+0800'
+      window.commentConfig.owner = 'NatsunoZero# 必填项, 你的GitHub ID'
+      window.commentConfig.repo = 'comment-repo-blogichi# 必填项  你的存储评论的repo'
+      window.commentConfig.client_id = 'a4c9b5f5b9c4c5cdbd9f'
+      window.commentConfig.client_secret = 'c4b55faabc640835c1c8adea4dbaaed0b1e73ada# 必填项'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Mon Jan 21 2019 12:28:29 GMT+0800',
+        owner: 'NatsunoZero# 必填项, 你的GitHub ID',
+        repo: 'comment-repo-blogichi# 必填项  你的存储评论的repo',
+        client_id: 'a4c9b5f5b9c4c5cdbd9f',
+        client_secret: 'c4b55faabc640835c1c8adea4dbaaed0b1e73ada# 必填项',
+        redirect_uri: ''
+      }
+    }
+</script>
+<script src="/blog-blogichi/js/comment/gitment.js"></script>
 
 </html>
